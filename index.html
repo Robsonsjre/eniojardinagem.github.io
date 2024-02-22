@@ -24,6 +24,14 @@
 
       gtag('config', 'AW-16458261481');
     </script>
+    <script>
+    function whatsappClicked() {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16458261481/x5i1CPX3-JEZEOnH9Kc9',
+          'transaction_id': '',
+        });
+    }
+    </script>
 
     
 </head>
@@ -45,7 +53,12 @@
                     <li><a href="#contato" class="hover:text-green-200">Contato</a></li>
                 </ul>
                 <!-- CTA do WhatsApp -->
-                <a href="https://wa.me/+5511989776876" class="bg-yellow-400 text-white px-5 py-2 rounded-full font-bold shadow-lg transition-colors hover:bg-yellow-500" target="_blank" rel="noopener noreferrer">
+                <a 
+                href="https://wa.me/+5511989776876" 
+                class="bg-yellow-400 text-white px-5 py-2 rounded-full font-bold shadow-lg transition-colors hover:bg-yellow-500" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick="whatsappClicked();">
                     Fale Conosco no WhatsApp
                 </a>
             </nav>
@@ -57,7 +70,13 @@
         <div class="container mx-auto text-center flex flex-col items-center justify-center space-y-4">
             <img src="assets/logo.jpeg" style="visibility: hidden" alt="Enio Jardinagem Logo" class="h-32"> <!-- Logotipo da empresa -->
             <h2 class="text-4xl font-bold text-white px-6 py-3 bg-green-800 bg-opacity-50 rounded-md">Cuidando do seu jardim com excelência</h2>
-            <a href="https://wa.me/+5511989776876" class="bg-yellow-400 text-white px-5 py-2 rounded-full font-bold shadow-lg transition-colors hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50">Fale no WhatsApp</a>
+            <a 
+            target="_blank" 
+            onClick="whatsappClicked();"
+            href="https://wa.me/+5511989776876" 
+            class="bg-yellow-400 text-white px-5 py-2 rounded-full font-bold shadow-lg transition-colors hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50">Fale no WhatsApp
+
+          </a>
         </div>
     </section>
     
@@ -101,7 +120,12 @@
         <h3 class="text-3xl font-bold mb-6">Contato</h3>
         <p class="mb-4">Interessado em nossos serviços? Entre em contato conosco!</p>
         <!-- CTA do WhatsApp para Contato -->
-        <a href="https://wa.me/+5511989776876" class="inline-block bg-yellow-400 text-white px-5 py-2 rounded-full font-bold shadow-lg my-4 transition-colors hover:bg-yellow-500" target="_blank" rel="noopener noreferrer">
+        <a 
+        href="https://wa.me/+5511989776876" 
+        class="inline-block bg-yellow-400 text-white px-5 py-2 rounded-full font-bold shadow-lg my-4 transition-colors hover:bg-yellow-500" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onClick="whatsappClicked();">
             Fale Conosco no WhatsApp
         </a>
         <!-- Espaço extra para evitar sobreposição, se necessário -->
