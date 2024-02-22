@@ -24,12 +24,16 @@
 
       gtag('config', 'AW-16458261481');
     </script>
+
     <script>
-    function whatsappClicked() {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-16458261481/x5i1CPX3-JEZEOnH9Kc9',
-          'transaction_id': '',
-        });
+    function whatsappClicked(url) { 
+      var callback = function () { 
+        if (typeof(url) != 'undefined') { 
+          window.location = url; 
+        } 
+      }; 
+      gtag('event', 'conversion', { 'send_to': 'AW-16458261481/x5i1CPX3-JEZEOnH9Kc9', 'transaction_id': '', 'event_callback': callback }); 
+      return false; 
     }
     </script>
 
